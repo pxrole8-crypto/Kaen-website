@@ -1,34 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>KAEN | Clothing Brand</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>KAEN | Official Clothing Brand</title>
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
       background: #000;
       color: #fff;
-      text-align: center;
     }
     header {
-      padding: 60px 20px;
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 32px;
+      letter-spacing: 3px;
     }
-    h1 {
-      font-size: 48px;
-      letter-spacing: 4px;
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
     }
-    p {
-      opacity: 0.8;
+    .card {
+      background: #111;
+      border-radius: 12px;
+      padding: 15px;
+      text-align: center;
+    }
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .price {
+      margin-top: 10px;
+      font-size: 18px;
+    }
+    .buy {
+      margin-top: 10px;
+      padding: 10px;
+      background: #fff;
+      color: #000;
+      border-radius: 20px;
+      text-decoration: none;
+      display: inline-block;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>KAEN</h1>
-    <p>Official Clothing Brand</p>
-    <p>Launching Soon 🚀</p>
-  </header>
+
+<header>KAEN</header>
+
+<section class="products">
+  <div class="card">
+    <img src="IMG-20260111-WA0001.jpg">
+    <h3>KAEN Oversized Tee</h3>
+    <div class="price">₹999</div>
+    <a class="buy" href="#">Buy Now</a>
+  </div>
+
+  <div class="card">
+    <img src="IMG-20260111-WA0002.jpg">
+    <h3>KAEN Black Hoodie</h3>
+    <div class="price">₹1,999</div>
+    <a class="buy" href="#">Buy Now</a>
+  </div>
+</section>
+
 </body>
 </html>
